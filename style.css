@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  user-select: none;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page 1 */
+.user {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.userName {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 280px;
+  height: 40px;
+  border-radius: 0.2rem;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* Page 2 */
+.container {
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  height: 550px;
+  width: 70%;
+  max-width: 600px;
+  border: 0.1rem solid black;
+  background-color: aliceblue;
+
+  color: black;
+  display: none; /* initially hidden */
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(224, 48, 48);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 2.5rem;
+}
+
+.border {
+  width: 100%;
+  border-bottom: 0.1rem solid black;
+  margin-bottom: 1rem;
+}
+
+.Question {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.answer1 {
+  margin: 1rem;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.answerp {
+  margin: 1rem;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+.answer1:hover {
+  background-color: black;
+  color: white;
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+
+.incorrect {
+  background-color: #ff9393;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 550px) {
+  .container {
+    width: 95%;
+    height: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .Question {
+    font-size: 1.4rem;
+  }
+
+  .answer1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
