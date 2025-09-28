@@ -127,10 +127,7 @@ h1 {
   cursor: not-allowed;
 }
 
-.answer1:hover {
-  background-color: black;
-  color: white;
-}
+
 
 .correct {
   background-color: #9aeabc;
@@ -171,3 +168,4 @@ span {
     padding: 0.5rem 1.5rem;
   }
 }
+
