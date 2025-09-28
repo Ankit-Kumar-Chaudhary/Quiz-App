@@ -116,10 +116,10 @@ h1 {
   cursor: pointer;
 }
 
-.answer1:hover {
+/*.answer1:hover {
   background-color: black;
   color: white;
-}
+}*/
 
 
 .answerp {
@@ -174,5 +174,6 @@ span {
     padding: 0.5rem 1.5rem;
   }
 }
+
 
 
