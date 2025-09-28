@@ -116,6 +116,12 @@ h1 {
   cursor: pointer;
 }
 
+.answer1:hover {
+  background-color: black;
+  color: white;
+}
+
+
 .answerp {
   margin: 1rem;
   padding: 0.7rem;
@@ -168,4 +174,5 @@ span {
     padding: 0.5rem 1.5rem;
   }
 }
+
 
